@@ -1,14 +1,19 @@
+
 public class Calculator {
+    public static final char ADDITTION = '+';
+    public static final char SUBTRACTION = '-';
+    public static final char MULTICATION = '*';
+    public static final char DIVITION = '/';
 
     public static int calculate(int a, int b, char o) {
         switch (o) {
-            case '+':
+            case ADDITTION:
                 return a + b;
-            case '-':
+            case SUBTRACTION:
                 return a - b;
-            case '*':
+            case MULTICATION:
                 return a * b;
-            case '/':
+            case DIVITION:
                 if (b != 0)
                     return a / b;
                 else
